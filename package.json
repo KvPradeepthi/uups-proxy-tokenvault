@@ -1,0 +1,21 @@
+{
+  "name": "uups-proxy-tokenvault",
+  "version": "1.0.0",
+  "description": "Production-grade upgradeable TokenVault smart contract system",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy-v1": "hardhat run scripts/deploy-v1.js",
+    "upgrade-v2": "hardhat run scripts/upgrade-to-v2.js",
+    "upgrade-v3": "hardhat run scripts/upgrade-to-v3.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.0.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.7.0"
+  }
+}
